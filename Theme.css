@@ -1,0 +1,365 @@
+body {
+	margin: 0;
+}
+
+#Flag-Area {
+	margin: 0;
+}
+
+#Navigation-Area {
+	margin: 0;
+}
+
+.Navigation {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	border: none;
+	height: 5vh;
+	color: white;
+	background: black;
+}
+
+.Navigation:hover {
+	color: fuchsia;
+	background: black;
+}
+
+.Navigation:active {
+	color: black;
+	background: fuchsia;
+}
+
+#Message-Area {
+	margin: 0;
+}
+
+#Messageboard {
+	position: relative;
+	height: 50vh;
+	margin-bottom: 0;
+	border: solid black 1vw;
+	border-bottom: none;
+	overflow: auto;
+	overflow-x: hidden;
+	background: url("Pictures/Map2.png");
+	background-size: auto 100%;
+}
+
+.Message {
+	margin: 1vw;
+	margin-top: 0;
+}
+
+#Time {
+	bottom: 0;
+	text-align: center;
+	margin: 1vw;
+}
+
+#Chatbar {
+	height: 5vh;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
+	background: black;
+	position: relative;
+	border: solid black 1vw;
+	font-size: 5vh;
+}
+
+.Name {
+	position: relative;
+	z-index: 2;
+	margin: .5vw;
+}
+
+#Input {
+	height: 100%;
+	width: 50%;
+	color: white;
+	font-size: 5vh;
+	background: black;
+	border: none;
+	padding: none;
+	margin: 0;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 30%;
+	z-index: 1;
+}
+
+#Input:focus {
+	width: 100%;
+	right: 0;
+	border: none;
+	outline: none;
+	z-index: 3;
+}
+
+#Send {
+	height: 100%;
+	float: right;
+	position: relative;
+	z-index: 2;
+}
+
+#Commands {
+	height: 100%;
+	float: right;
+	position: relative;
+	z-index: 2;
+}
+
+#Command-Panel {
+	overflow: auto;
+	overflow-x: hidden;
+	display: none;
+	margin-bottom: 1vw;
+	margin-top: 0;
+	border: solid black 1vw;
+	border-top: none;
+	background: url("Pictures/Map2.png");
+	background-size: auto 100%;
+	background-position: left top;
+}
+
+#Filebox-Area {
+	border: solid black 1vw;
+	border-bottom: none;
+	position: relative;
+	background: url("Pictures/Map2.png");
+	background-size: 100% auto;
+	background-position: right top;
+	background: url("Pictures/Map2.png");
+	background-size: 100% auto;
+	background-position: right top;
+}
+
+.Filebox {
+	border-bottom: solid black 1vw;
+}
+
+.Filebox-Header {
+	width: 100%;
+	height: 5vh;
+	background: black;
+	color: white;
+	top: 0;
+	margin: 0;
+	font-size: 4vh;
+}
+
+.Filebox-Upload-Bar {
+	margin: 1vw;
+}
+
+.Filebox-Upload-Select {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.Filebox-Upload-Text {
+	width: 68vw;
+	height: 10vw;
+	border: double black 1vw;
+	border-left: none;
+	float: right;
+}
+
+.Filebox-Upload-Button {
+	float: right;
+	margin: 1vw;
+}
+
+.File {
+	margin: 1vw;
+}
+
+.FileInfo {
+	overflow: hidden;
+	border: double black 1vw;
+	border-left: none;
+	float: right;
+}
+
+@media screen and (max-aspect-ratio: 13/9) {
+	#Flag-Area {
+		width: 100vw;
+	}
+	
+	#Flag {
+		width: 90vw;
+		margin: 5vw;
+	}
+
+	#Navigation-Area {
+		width: 100vw;
+	}
+	
+	.Navigation {
+		width: 90vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		border-radius: 2vw;
+	}
+	
+	#Message-Area {
+		width: 100vw;
+	}
+	
+	#Messageboard {
+		width: 88vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		margin-top: 5vw;
+		background-position: right bottom;
+	}
+	
+	.Message {
+		font-size: 3vw;
+	}
+
+	#Time {
+		width: 86vw;
+	}
+	
+	#Chatbar {
+		width: 88vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+	
+	#Command-Panel {
+		width: 88vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+	
+	#Filebox-Area {
+		width: 88vw;
+		margin: 5vw;
+		position: relative;
+	}
+	
+	.Filebox-Upload-Symbol {
+		width: 12vw;
+		margin: 1vw;
+	}
+	
+	.Filebox-Upload-Text {
+		width: 68vw;
+		height: 10vw;
+		margin: 1vw;
+	}
+	
+	.Filebox-Upload-Button {
+		height: 8vw;
+	}
+	
+	.FileImage {
+		height: 12vw;
+		margin: 1vw;
+	}
+
+	.FileInfo {
+		font-size: 3vw;
+		width: 68vw;
+		height: 10vw;
+		margin: 1vw;
+	}
+}
+
+@media screen and (min-aspect-ratio: 13/9) {
+	body {
+		margin-bottom: 1vw;
+	}
+	
+	#Flag-Area {
+		width: 30vw;
+		float: left;
+	}
+	
+	#Flag {
+		width: 28vw;
+		margin: 1vw;
+		position: relative;
+		z-index: 2;
+	}
+
+	#Navigation-Area {
+		width: 30vw;
+		position: relative;
+		z-index: 2;
+		clear: left
+	}
+	
+	.Navigation {
+		width: 28vw;
+		margin: 1vw;	
+		border-radius: 1vw;
+	}
+	
+	#Message-Area {
+		z-index: 1;
+		clear: left;
+	}
+	
+	#Messageboard {
+		width: 26vw;
+		margin-left: 1vw;
+		margin-right: 1vw;
+		margin-top: 1vw;
+		background-position: left top;
+	}
+	
+	#Time {
+		width: 24vw;
+	}
+	
+	#Chatbar {
+		width: 26vw;
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+	
+	#Command-Panel {
+		width: 26vw;
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+	
+	#Filebox-Area {
+		width: 66vw;
+		margin: 1vw;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+	.Filebox-Upload-Symbol {
+		width: 7vw;
+	}
+	
+	.Filebox-Upload-Text {
+		width: 54vw;
+		height: 5vw;
+	}
+	
+	.Filebox-Upload-Button {
+		height: 3vw;
+	}
+	
+	.FileImage {
+		width: 7vw;
+	}
+
+	.FileInfo {
+		width: 54vw;
+		height: 5vw;
+	}
+}
