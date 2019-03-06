@@ -71,7 +71,7 @@
 			}
 		} elseif (substr($_POST['Input'], 0, 18) == '$Remove Signature ') {
 			if ($Result = $Database->query("select Image from Signatures where number = '".substr($_POST['Input'], 18)."'")->fetch_assoc()) {
-				if (exec("rm Signatures/".$Result['Image']) && $Database->query("delete from Signatures where number = '".substr($_POST['Input'], 18)."'")) {
+				if (!exec("rm Signatures/".$Result['Image']) && $Database->query("delete from Signatures where number = '".substr($_POST['Input'], 18)."'")) {
 					$Return = '<p class="Message"><b class="Bot">Bot</b>: Signature removal success :D<p/>';
 				}
 			} else {
