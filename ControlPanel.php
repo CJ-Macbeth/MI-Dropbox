@@ -111,7 +111,7 @@
 	</head>
 	<body>
 		<div id="Flag-Area">
-			<img id="Flag" src="IconPack/Flag.png" />
+			<img id="Flag" src="IconPack/ControlPanelFlag.png" />
 		</div>
 		<div id="Navigation-Area">
 			<a href="Dropbox.php"><button class="Navigation">Dropbox</button></a>
